@@ -21,7 +21,9 @@
         <ul>
             {% for n in news %}
                 <li>
+                    <a href="{{ path('news_show', {id: n.id}) }}">{{ n.title }}</a>
                     {{ n.title }}
+                    {{ n.description }}
                 </li>
             {% endfor %}
         </ul>
