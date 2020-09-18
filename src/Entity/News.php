@@ -58,6 +58,8 @@ class News
     public function __construct()
     {
         $this->comments = new ArrayCollection();
+        $this->created_at = new \DateTime();
+        $this->is_published = false;
     }
 
     public function getId(): ?int
